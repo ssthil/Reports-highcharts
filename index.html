@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Report Layout</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/daterangepicker-bs3.css">
+	<link rel="stylesheet" href="css/customized-accordion.css">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="left-section">
+			<div id="accordion">
+				<h3 class="category-header">Service Management Reports</h3>
+				<div class="reports-list">
+					<ul>
+						<li><span>General Ticket Listing</span></li>
+						<li><span>Requests Summary</span></li>
+					</ul>
+				</div>
+				<h3 class="category-header">Security Management Reports</h3>
+				<div class="reports-list">
+					<ul>
+						<li><span>IPS/IDS Event Summary</span></li>
+						<li><span>Log Analysis Event Summary</span></li>
+						<li><span>Security Event Summary</span></li>
+						<li><span>Security Incident Report</span></li>
+						<li><span>IPS Threat Details</span></li>
+						<li><span>IPS Events by Source</span></li>
+						<li><span>IPS Events by Destination</span></li>
+						<li><span>IPS Event by Protocol</span></li>
+						<li><span>IPS Event by Action</span></li>
+					</ul>
+				</div>
+				<h3 class="category-header">Device Management Reports</h3>
+				<div class="reports-list">
+					<ul>
+						<li><span>Device Configuration Change Request Summary</span></li>
+						<li><span>Device Availability Report</span></li>
+						<li><span>Device Interface Stats</span></li>
+						<li><span>Resource Usage Metrics</span></li>
+					</ul>
+				</div>
+				<h3 class="category-header">Device Traffic Reports<span class="accordion-icon accordion-icon-normal"></span></h3>
+				<div class="reports-list">
+					<ul>
+						<li><span>Device Traffic Stats Report</span></li>
+						<li><span>Device Traffic Stats by Protocol</span></li>
+						<li><span>Device Traffic Stats by Port</span></li>
+						<li><span>Device Traffic Stats by Source-ip</span></li>
+						<li><span>Device Traffic Stats by Destination-ip</span></li>
+						<li><span>Device Traffic Stats by Action</span></li>
+					</ul>
+				</div>
+				<h3 class="category-header">Content Security Reports</h3>
+				<div class="reports-list">
+					<ul>
+						<li><span>Web Activity Reports</span></li>
+						<li><span>Application Reports</span></li>
+						<li><span>Antivirus Reports</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="right-section">
+			<!-- panel one -->
+			<div class="panel panel-default">
+				<div class="panel-heading">Advanced Filter Option</div>
+				<div class="panel-body">
+					<form action="" class="form-horizontal">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="" class="control-label col-xs-2">Quick Date</label>
+									<div class="col-xs-10">
+										<select name="" id="" class="form-control border-radius-none">
+											<option value="">Lat 24 hours</option>
+											<option value="">Lat 30 dyas</option>
+											<option value="">Lat 60 dyas</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label col-xs-2">Date Range</label>
+									<div class="col-xs-10">
+										<input type="text" name="daterange" value="01/01/2015 1:30 PM - 01/01/2015 2:00 PM" class="form-control border-radius-none"/>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="control-label col-xs-2">Device</label>
+									<div class="col-xs-10">
+										<select name="" id="" class="form-control border-radius-none">
+											<option>CELL-MASTER-1-ASA5512X-212</option>
+							                <option>CELL-MASTER-1-PA5020-181</option>
+							                <option>SITONECELL-MASTER-1-PA3050-230</option>
+							                <option>ACUS-ACELL-MASTER-1-CP12000-002</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- panel two-->
+			<div class="panel panel-default" style="display:none">
+				<div class="panel-heading">Advanced Filter Option</div>
+				<div class="panel-body">
+					<form action="" class="form-horizontal">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<label for="" class="control-label col-xs-2">Quick Date</label>
+									<div id="reportrange" class="col-xs-10 date-cntrl-brd" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc; width:79%">
+									    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+									    <span></span> <b class="caret pull-right" style="  margin-top: 10px;"></b>
+									</div>
+								</div>
+							
+								<div class="form-group">
+									<label for="" class="control-label col-xs-2">Device</label>
+									<div class="col-xs-10">
+										<select name="" id="" class="form-control border-radius-none">
+											<option>EMERIO-EMERIOCELL-MASTER-1-ASA5512X-212</option>
+							                <option>EMERIO-EMERIOCELL-MASTER-1-PA5020-181</option>
+							                <option>SITONECUST-SITONECELL-MASTER-1-PA3050-230</option>
+							                <option>NTTACUS-NTTACELL-MASTER-1-CP12000-002</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- panel report-->
+			<div class="panel panel-default">
+				<div class="panel-heading report-title"></div>
+				<div class="panel-body">
+					<div id="chart-view-container"></div>
+				</div>
+			</div>
+	
+	</div>
+<script src="script/jquery-2.1.4.min.js"></script>
+<script src="script/jquery-ui.min.js"></script>
+<script src="script/moment.js"></script>
+<script src="script/daterangepicker.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="script/main.js"></script>
+<script src="script/report.js"></script>
+<script type="text/javascript" src=""></script>
+</body>
+</html>

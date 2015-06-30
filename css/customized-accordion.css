@@ -1,0 +1,25 @@
+.accordion-icon {
+  	position: absolute;
+  	right: .5em;
+  	top: 51%;
+  	margin-top: -8px;
+	width: 16px;
+	height: 16px;
+	transition:background-image 0.4s ease-in;
+}
+.accordion-icon{
+  background-image: url("../img/plus-minus.png");
+}
+.accordion-icon-normal {
+  background-position: 0 16px;
+}
+.accordion-icon-active {
+  background-position: 0 2px;
+}
+.border-radius-nonee{
+  border-radius: 0;
+}
+.date-cntrl-brd{
+    margin-left: 16px;
+  border-radius: 4px;
+}
