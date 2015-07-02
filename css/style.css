@@ -39,7 +39,8 @@ ul li {
   float: left;
 }
 .category-header{
-  background-color: #ddd;
+  background-color: #516780;
+  color: #DFE8F4;
   font-size: 15px;
   padding: 12px 10px;
   font-weight: normal;
@@ -52,10 +53,10 @@ ul li {
   -moz-transition:background-color 0.5s ease;
 }
 .category-header:hover {
-  background-color: #C2C2C2;
+  background-color: #3E4F5E;
   }
 .reports-list{
-	background: #F5F5F5;
+	background: #EEF4FA;
 }
 .reports-list ul{
 	padding: 10px;
@@ -87,8 +88,8 @@ ul li {
 }
 /* Customized bootstrap css*/
 .navbar-default {
-  background-color: #515793;
-  border-color: #A5ADC5;
+   background-color: #17969B;
+  border-color: #40A3C0;
 }
 .navbar-default .navbar-brand {
   color: #F4F4F4;
@@ -104,4 +105,20 @@ ul li {
   padding: 15px 15px;
   font-size: 24px;
   line-height: 20px;
+}
+.panel-theme-1 {
+  border-color: #D5E1EC;
+}
+.panel-theme-1 > .panel-heading {
+  color: #2C3541;
+  background-color: #E9F0F5;
+  border-color: #D5E1EC;
+}
+.panel-theme-2 > .panel-heading {
+  color: #7B6D56;
+  background-color: #F7EFDD;
+  border-color: #E2DED3;
+}
+.panel-theme-2 {
+   border-color: #E2DED3;
 }
