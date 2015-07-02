@@ -18,6 +18,7 @@ $(function(){
     //report title
     $('.reports-list span').on('click', function(){
     	$('.report-title').text($(this).text());
+    	
     })
     
 

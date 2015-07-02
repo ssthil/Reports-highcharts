@@ -1,0 +1,22 @@
+[
+    {
+        "report_title": "IPS Events by Source",
+        "chart": "column"
+    },
+    {
+        "name": "Male",
+        "data": [
+            210,
+            354,
+            478
+        ]
+    },
+    {
+        "name": "Female",
+        "data": [
+            201,
+            354,
+            487
+        ]
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "report_title": "IPS Event by Protocol",
+        "chart": "areaspline"
+    },
+    {
+        "name": "Event",
+        "data": [
+            110,
+            254,
+            378,
+            423,
+            354,
+            578,
+            623
+        ]
+    },
+    {
+        "name": "Protocol",
+        "data": [
+            301,
+            254,
+            487,
+            553,
+            454,
+            387,
+            653    
+        ]
+    }
+]

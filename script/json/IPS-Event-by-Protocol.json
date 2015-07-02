@@ -1,0 +1,22 @@
+[
+    {
+        "report_title": "IPS Event by Protocol",
+        "chart": "spline"
+    },
+    {
+        "name": "Event",
+        "data": [
+            110,
+            354,
+            578
+        ]
+    },
+    {
+        "name": "Protocol",
+        "data": [
+            301,
+            954,
+            487
+        ]
+    }
+]

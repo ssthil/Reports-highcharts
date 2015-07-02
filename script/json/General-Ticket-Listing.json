@@ -1,0 +1,22 @@
+[
+    {
+        "report_title": "General Ticket Listing",
+        "chart": "area"
+    },
+    {
+        "name": "Male",
+        "data": [
+            510,
+            654,
+            878
+        ]
+    },
+    {
+        "name": "Female",
+        "data": [
+            501,
+            654,
+            987
+        ]
+    }
+]

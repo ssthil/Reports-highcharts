@@ -1,0 +1,22 @@
+[
+    {
+        "report_title": "IPS Events by Destination",
+        "chart": "pie"
+    },
+    {
+        "name": "Male",
+        "data": [
+            510,
+            654,
+            878
+        ]
+    },
+    {
+        "name": "Female",
+        "data": [
+            501,
+            654,
+            987
+        ]
+    }
+]

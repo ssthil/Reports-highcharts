@@ -1,15 +1,18 @@
 $(document).ready(function(){
+    $('#chart-section').hide();
     $('.reports-list span').on('click', function(){
-    var report_title = $(this).text().replace(/ /g, '-');
-      getAjaxData(report_title);
-
+        $('#chart-section').show();
+        var report_title = $(this).text().replace(/ /g, '-');
+        // console.log(report_title);
+        getAjaxData(report_title);
     });
 });
 
 function getAjaxData(id){
         
         //use getJSON to get the dynamic data via AJAX call
-        $.getJSON('script/data.json',{id:id}, function(chartData) {
+        $.getJSON('script/json/'+id+'.json', function(chartData) {
+
             var options = {
                 chart: {
                     renderTo: 'chart-container',
@@ -29,6 +32,7 @@ function getAjaxData(id){
                 },
                 series: chartData
             };
+
              chart = new Highcharts.Chart(options);
             
         });
